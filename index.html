@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <title>MAgis 5 Part 2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="./main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    :root {
+      --color: rgba(0, 0, 0, 0.4);
+    }
+
+    .transparent {
+      background-color: var(--color);
+    }
+
+    .mpHighlight {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+  </style>
+
+  <script defer>
+    let gOff = Math.floor(Math.random() * 200)
+    let bOff = Math.floor(Math.random() * 200)
+    const speed = 5 // Inverted
+    setInterval(() => {
+      let r = document.querySelector(':root')
+
+      r.style.setProperty('--color', `rgba(${((Date.now()) / speed) % 255}, ${255 - ((Date.now() / speed) % 255 + gOff)}, ${(Date.now() / speed) % 255 + bOff},0.3)`)
+      if (Date.now() / speed % 255 > 250) {
+        gOff = Math.floor(Math.random() * 200)
+        bOff = Math.floor(Math.random() * 200)
+      }
+    }, 10)
+
+  </script>
+</head>
+
+<body>
+  <noscript>
+    <p class="display-1">
+      PLEASE ENABLE JAVASCRIPT - MANY FEATURES SUCH AS LIGHT/DARK MODE, HEADER ALIGNMENT ETC WON'T WORK WITHOUT JS.
+    </p>
+  </noscript>
+  <nav class="navbar navbar-expand-sm fixed-top" id="nav" style="padding-top: 0;">
+    <div class="container-fluid " id="myNavbar1" style="padding-top: 2vh; padding-bottom: 2vh;">
+      <a class="navbar-brand active" href="./index.html">MAgis5 Part2</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar"
+        onclick=updCollapsibleNav>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a href="./aboutMe.html" class="nav-link">About Me</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">My interests</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">1</a></li>
+              <li><a class="dropdown-item" href="#">2</a></li>
+              <li><a class="dropdown-item" href="#">3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="./documentation.html" class="nav-link">Documentation</a></li>
+        </ul>
+        <span class="d-flex">
+          <a href="#" class="btn btn-primary switch" id="btnSwitch">Light/Dark Mode <small
+              style="font-size: 0.7vw;">(Stores a cookie)</small></a>
+        </span>
+      </div>
+    </div>
+
+  </nav>
+
+
+  <!-- <div class="container" id="pageHead"> -->
+  <div class="container-fluid " id="content"
+    style="height: 100vh; background-image: url(assets/martin.jpg); background-repeat: no-repeat;background-size: cover;">
+    <!-- <img src="assets/martin.jpg" class="img-fluid" alt="..." width="100%" height="100vw"> -->
+    <div class="transparent my-auto mx-auto d-flex" style="height: 100vh; width: 90vw;">
+
+      <div style="margin-top: 15vh; padding-left: 10vw; width: 80vw; height: 80%;" class="row">
+        <!--class="mx-auto"-->
+        <div class="mpHighlight col">
+          <p class="display-1" style="font-family:cursive; line-height: 60px; padding: 0;margin: 0;">
+            <br>
+            Martin&nbsp;Thomas
+            <br>
+            <small class="display-5"> <i>My final MA</i></small>
+          </p>
+          <p>
+            <br>
+            I'll add something here later
+          </p>
+        </div>
+        <p class="col mpHighlight"
+          style="margin-left: 5vw; padding: 1rem; font-family: 'Courier New', Courier, monospace; line-height: 20px;">
+          Learn more about me at the <a href="./aboutMe.html">About Page</a>
+          <br><br>
+          Visit the pages under "My Interests" to see what I enjoy.
+          <br><br>
+          Check out the <a href="./documentation.html">Documentation Page</a> to explore the process behind building
+          this site!
+          <br><br>
+          <mark> <i><u>Thank you Mrs. Fernandez for this amazing school year! </u></i></mark>
+          <br><br><br>
+          <small>P.S. Is the color animation ok?</small>
+        </p>
+
+
+
+      </div>
+    </div>
+    <br><br>
+    <p>
+      I'll add something here later
+    </p>
+  </div>
+
+</body>
+
+</html>
