@@ -11,3 +11,7 @@ body{
 #btnSwitch{
     margin-top:5px;
 }
+#content {
+    margin: 0;
+    padding: 0;
+}
