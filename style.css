@@ -15,3 +15,32 @@ body{
     margin: 0;
     padding: 0;
 }
+.links{
+    padding-top: 0vh;
+    font-size: 1.5vw;
+}
+
+
+
+.typing {
+    width: 26ch;
+    animation: typing 8s steps(26), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  /* Typing animation from https://codepen.io/denic/pen/GRoOxbM */
