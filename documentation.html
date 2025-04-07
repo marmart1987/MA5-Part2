@@ -15,16 +15,31 @@
     :root {
       --color: rgba(0, 0, 0, 0.4);
     }
+
+    .ques h3,
+    .ques p {
+      margin-left: 2vw;
+    }
+
+    .ques h3 {
+      color: gray
+    }
+
+    .ques p {
+      text-decoration: underline;
+      padding-top: 3vh;
+    }
+
+    #header {
+      height: 40vh;
+      background: rgb(0, 58, 108);
+      background: linear-gradient(90deg, rgba(0, 58, 108, 1) 0%, rgba(0, 212, 255, 1) 100%);/*https://cssgradient.io/*/
+    }
   </style>
 
 </head>
 
 <body>
-  <noscript>
-    <p class="display-1">
-      PLEASE ENABLE JAVASCRIPT - MANY FEATURES SUCH AS LIGHT/DARK MODE, HEADER ALIGNMENT ETC WON'T WORK WITHOUT JS.
-    </p>
-  </noscript>
   <nav class="navbar navbar-expand-sm fixed-top" id="nav" style="padding-top: 0;">
     <div class="container-fluid " id="myNavbar1" style="padding-top: 2vh; padding-bottom: 2vh;">
       <a class="navbar-brand" href="./index.html">MAgis5 Part2</a>
@@ -55,11 +70,51 @@
 
   </nav>
   <div class="container-fluid " id="content">
-    <footer class="bg-body-tertiary text-center">
+    <div class="container-fluid" id="header" >
+      <h1 class="text-center align-middle" style="padding-top: 15vh;" >Documentation</h1>
+    </div>
+    <div class="container" style="padding-top:5vh">
+      <div class="ques">
+        <h2>Goals (1 pt)</h2>
+        <h3>
+          In a paragraph, clearly state the purpose of your website, your target audience and your key goals
+          incorporated in
+          the site such as skills, talents, and accomplishments.
+        </h3>
+        <p>fglshuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaag</p>
+      </div>
+      <div class="ques">
+        <h2>Homepage Design (3 pts)</h2>
+        <h3>
+          In a paragraph, clearly state the purpose of your website, your target audience and your key goals
+          incorporated in
+          the site such as skills, talents, and accomplishments.
+        </h3>
+      </div>
+      <div class="ques">
+        <h2>Interest Page 1 Design (3 pts)</h2>
+        <h3>
+          In a paragraph, clearly state the purpose of your website, your target audience and your key goals
+          incorporated in
+          the site such as skills, talents, and accomplishments.
+        </h3>
+      </div>
+      <div class="ques">
+        <h2>Interest Page 2 Design (3 pts)</h2>
+        <h3>
+          In a paragraph, clearly state the purpose of your website, your target audience and your key goals
+          incorporated in
+          the site such as skills, talents, and accomplishments.
+        </h3>
+      </div>
+
+    </div>
+
+    <footer class="text-center">
       <div class="container p-4">
         <div class="mb-4">
           <p>
-            This site is hosted online using the free tier of Cloudflare Pages at <a href="https://martin37.my.to/"
+            This site is hosted for free using Cloudflare Pages at <a href="https://martin37.my.to/"
               target="_blank">https://martin37.my.to/</a>. The domain and DNS service is from <a
               href="https://freedns.afraid.org" target="_blank">Free DNS</a>
           </p>

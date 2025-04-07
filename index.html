@@ -33,7 +33,7 @@
     setInterval(() => {
       let r = document.querySelector(':root')
 
-      r.style.setProperty('--color', `rgba(${((Date.now()) / speed) % 255}, ${255 - ((Date.now() / speed) % 255 + gOff)}, ${(Date.now() / speed) % 255 + bOff},0.3)`)
+      r.style.setProperty('--color', `rgba(${((Date.now()) / speed) % 255}, ${255 - ((Date.now() / speed) % 255 + gOff)}, ${(Date.now() / speed) % 255 + bOff},0.2)`)
       if (Date.now() / speed % 255 > 250) {
         gOff = Math.floor(Math.random() * 200)
         bOff = Math.floor(Math.random() * 200)
@@ -116,11 +116,11 @@
 
       </div>
     </div>
-    <footer class="bg-body-tertiary text-center">
+    <footer class="text-center">
       <div class="container p-4">
         <div class="mb-4">
           <p>
-            This site is hosted online using the free tier of Cloudflare Pages at <a href="https://martin37.my.to/"
+            This site is hosted for free using Cloudflare Pages at <a href="https://martin37.my.to/"
               target="_blank">https://martin37.my.to/</a>. The domain and DNS service is from <a
               href="https://freedns.afraid.org" target="_blank">Free DNS</a>
           </p>
