@@ -31,6 +31,8 @@ function getCookie(cname) {
 }
 //https://www.w3schools.com/js/js_cookies.asp
 // You can probably tell which code is mine or not by looking at the semicolons. I'm too lazy to write them.
+
+
 console.log("Theme:", getCookie("theme"))
 if(getCookie("theme")==='bg-dark'){
     document.documentElement.setAttribute('data-bs-theme', 'dark')
