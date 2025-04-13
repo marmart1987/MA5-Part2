@@ -9,53 +9,28 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css">
-
   <script defer src="./main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <style>
     :root {
       --color: rgba(0, 0, 0, 0.4);
     }
-
-    .transparent {
-      background-color: var(--color);
-    }
-
-    .mpHighlight {
-      background-color: rgba(128, 128, 128, 0.5);
-      border-radius: 1rem;
-      display: block;
-    }
   </style>
 
-  <script defer>
-    let gOff = Math.floor(Math.random() * 200)
-    let bOff = Math.floor(Math.random() * 200)
-    const speed = 5 // Inverted
-    setInterval(() => {
-      let r = document.querySelector(':root')
-
-      r.style.setProperty('--color', `rgba(${((Date.now()) / speed) % 255}, ${255 - ((Date.now() / speed) % 255 + gOff)}, ${(Date.now() / speed) % 255 + bOff},0.2)`)
-      if (Date.now() / speed % 255 > 250) {
-        gOff = Math.floor(Math.random() * 200)
-        bOff = Math.floor(Math.random() * 200)
-      }
-    }, 10)
-
-  </script>
 </head>
 
 <body>
+
   <nav class="navbar navbar-expand-md fixed-top" id="nav" style="padding-top: 0;">
     <div class="container-fluid " id="myNavbar1" style="padding-top: 2vh; padding-bottom: 2vh;">
-      <a class="navbar-brand active" href="./index.html">MAgis5 Part2</a>
+      <a class="navbar-brand " href="./index.html">MAgis5 Part2</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar"
         onclick=updCollapsibleNav>
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="navbar-nav me-auto">
-          <li class="nav-item"><a href="./aboutMe.html" class="nav-link">About Me</a></li>
+          <li class="nav-item"><a href="./aboutMe.html" class="nav-link active">About Me</a></li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">My interests</a>
@@ -69,62 +44,27 @@
         </ul>
         <span class="d-flex">
           <a href="#" class="btn btn-primary switch" id="btnSwitch">Light/Dark Mode <small
-              style="font-size: 0.7vw;">(Stores a cookie)</small></a>
+              style="font-size: 0.5rem">(Stores a cookie)</small></a>
         </span>
       </div>
     </div>
-  </nav>
 
+  </nav>
 
   <div class="container-fluid " id="content">
 
-    <div
-      style="min-height: 100%; margin: auto;  background-image: url(assets/martin.jpg); background-repeat: no-repeat;background-size: cover; padding-left: 2vw; padding-right: 2vw;">
-      <div class="transparent">
-        <div style="padding-top: 15vh; padding-left: 2vw; padding-bottom:10vh; padding-right: 2vw;" class="row">
 
-          <div class="col-md-6 mpHighlight" style="margin-bottom: 5vw; height: 80vh; margin-right: 10vw;">
-<<<<<<< Updated upstream
-            <p class="display-1" style="font-family:cursive; font-size: 3rem;">
-              <br>
-=======
-            <p class="display-1" style="font-family:cursive; font-size: 5rem; padding: 0">
-              
->>>>>>> Stashed changes
-              Martin Thomas
-              <br>
-              <small class="display-5"> <i>My final MA</i></small>
-              <noscript>
-                <p class="h3 warn" style="color: red;">
-                  Enabling Javascript is <i><b>recommended</b></i> :-)
-                </p>
-              </noscript>
-            </p>
-            <p>
-              <br>
-              I'll add something here later
-            </p>
-          </div>
-
-          <div class="col-md-4 mpHighlight" style="height: 80vh;">
-            <p style="padding: 1rem; font-size: 1rem; overflow: hidden;">
-              Learn more about me at the <a href="./aboutMe.html">About Page</a>
-              <br><br>
-              Visit the pages under "My Interests" to see what I enjoy.
-              <br><br>
-              Check out the <a href="./documentation.html">Documentation Page</a> to explore the process behind building
-              this site!
-              <br><br>
-              <mark  style="font-size: 0.9rem;"> <i><u>Thank you Mrs. Fernandez for this amazing
-                    school year! </u></i></mark>
-              <br><br><br>
-              <img src="assets/martin.jpg" class="rounded-circle" alt="Cinque Terre" style="width: 20rem; height:10rem;"> 
-              <!-- <small>P.S. I may or may not have put text here to force you to look at the color animation</small> -->
-            </p>
-          </div>
-
-        </div>
+    <img src="assets/martin.jpg" alt="A picture of Martin" class="img-fluid d-block mx-auto" style="height: 70vh; width: 100vw; object-fit: cover;
+      object-position: 100 0;" height="100%">
+    <div class="mx-5">
+      <h1 class="display-1">About Me</h1>
+      <div class="container-fluid" style="background-color: rgba(0, 58, 108, 0.4);  width:60vw">
+        <p style="width: 100%;font-size: 3vw;" class="typing text-center">Hi! I am Martin D. Thomas</p>
       </div>
+      <div class="container my-5">
+        <p>Hello! I will write something here later! </p>
+      </div>
+      
     </div>
     <footer class="text-center">
       <div class="container p-4">
@@ -136,11 +76,11 @@
           </p>
         </div>
         <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://github.com/marmart1987"
-          role="button" style="font-size: 2vw;"><i class="bi bi-github"></i></a>
+          role="button" style="font-size: 1rem;"><i class="bi bi-github"></i></a>
         <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="mailto:martin.thomas@student.ateneo.edu"
-          role="button" style="font-size: 2vw;"><i class="bi bi-envelope"></i></a>
+          role="button" style="font-size: 1rem;"><i class="bi bi-envelope"></i></a>
         <div class="row">
-          <div class="col-lg-5 text-start h5">
+          <div class="col-md-5 text-start h5">
             <p>This site is my fifth Major Assesment in the Computer 8 (Third Term) class by Mrs. Jimilette C.
               Fernandez.
               <br><br>
@@ -151,7 +91,7 @@
               </a>
             </p>
           </div>
-          <div class="col-lg-3 links">
+          <div class="col-md-3 links">
             <ul class="list-unstyled mb-0">
               <li>
                 <a class="text-body" href="index.html">Homepage</a>
@@ -164,7 +104,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-3 links">
+          <div class="col-md-3 links">
             <ul class="list-unstyled mb-0">
               <li>
                 <a class="text-body" href="#!">Interest 1</a>
@@ -199,7 +139,6 @@
       <!--Generated by the Creative Commons License Chooser-->
     </footer>
   </div>
-
 </body>
 
 </html>
