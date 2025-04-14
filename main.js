@@ -63,39 +63,22 @@ document.getElementById('btnSwitch').addEventListener('click', x)
 
 //---------------------
 
-document.addEventListener('scroll', scroll)
+// document.addEventListener('scroll', scroll)
 
-function scroll() {
-    console.log("a")
-    const el = document.getElementsByClassName("sI")
-    console.log(el)
-    for (let i = 0; i < el.length; i++) {
-        const element = el[i]
-        var rect = element.getBoundingClientRect();
-        console.log((rect.bottom), window.innerHeight);
-        if(rect.bottom < window.innerHeight){
-            console.log('GJJJJJJJJJM')
-            setInterval( () => {
+// function scroll() {
+//     console.log("a")
+//     const el = document.getElementsByClassName("sI")
+//     console.log(el)
+//     for (let i = 0; i < el.length; i++) {
+//         const element = el[i]
+//         var rect = element.getBoundingClientRect();
+//         console.log((rect.bottom), window.innerHeight);
+//         if(rect.bottom < window.innerHeight){
+//             console.log('GJJJJJJJJJM')
+//             setInterval( () => {
 
-            element.style.opacity--
-            }, 100)
-        }
-    }
-}
-// forEach(element => {
-//     console.log(element.position())
-// });
-
-// //     $('.hideme').each(function (i) {
-
-//         var bottom_of_object = $(this).position().top + $(this).outerHeight();
-//         var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-//         /* If the object is completely visible in the window, fade it it */
-//         if (bottom_of_window > bottom_of_object) {
-
-//             $(this).animate({ 'opacity': '1' }, 1500);
-
+//             element.style.opacity--
+//             }, 100)
 //         }
-
-//     });
+//     }
+// }
