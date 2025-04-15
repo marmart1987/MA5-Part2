@@ -54,3 +54,9 @@ https://codepen.io/geoffgraham/pen/jrWwWM
 typing animation (.typing, @keyframes typing, @keyframes blink-caret) copied from
 https://codepen.io/geoffgraham/pen/jrWwWM 
 */
+
+.centered{
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
