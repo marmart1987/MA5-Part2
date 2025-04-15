@@ -26,6 +26,19 @@
       border-radius: 1rem;
       display: block;
     }
+
+    .mpHighlight p,
+    .mpHighlight a {
+      color: lightgreen;
+      font-weight: bold;
+
+    }
+
+    .mpHighlight div {
+      color: lightpink;
+      font-weight: bolder;
+
+    }
   </style>
 
   <script defer>
@@ -84,7 +97,7 @@
         <div style="padding-top: 15vh; padding-left: 2vw; padding-bottom:10vh; padding-right: 2vw;" class="row">
 
           <div class="col-md-6 mpHighlight" style="margin-bottom: 5vw; height: 80vh; margin-right: 10vw;">
-            <p class="display-1" style="font-family:cursive; font-size: 5rem; padding: 0">              
+            <div class="display-1" style="font-family:cursive; font-size: 5rem; padding: 0">
               Martin Thomas
               <br>
               <small class="display-5"> <i>MA5 Term 3 - E-Portfolio</i></small>
@@ -93,14 +106,14 @@
                   Enabling Javascript is <i><b>recommended</b></i> :-)
                 </p>
               </noscript>
-            </p>
+            </div>
             <p>
               <br>
               Submitted:_______ <br>
               Started: March 28, 2025
-              Available online at <a href="https://martin37.my.to/" class="mark">https://martin37.my.to/</a><br>
-              The references used can be found in <a href="documentation.html" class="mark">The documentation page</a>
-            
+              Available online at <a href="https://martin37.my.to/" class="marj">https://martin37.my.to/</a><br>
+              The references used can be found in <a href="documentation.html" class="marj">the Documentation Page</a>
+
             </p>
           </div>
 
@@ -110,18 +123,21 @@
               <br><br>
               Visit the pages under "My Interests" to see what I enjoy.
               <br>
-              <ol>
-                <li class="mark"><a href="#">Placeholder  </a></li>
-                <li class="mark"><a href="learningReading.html">Reading and Learning</a></li>
-                <li class="mark"><a href="programming.html">Programming</a></li>
-              </ol>
-              <br>
+            <ol>
+              <li class="marj" style="max-width: fit-content;"><a href="#">Placeholder </a></li>
+              <li class="marj" style="max-width: fit-content;"><a href="learningReading.html">Reading and Learning</a>
+              </li>
+              <li class="marj" style="max-width: fit-content;"><a href="programming.html">Programming</a></li>
+            </ol>
+            <br>
+            <p>
               Check out the <a href="./documentation.html">Documentation Page</a> to explore the process behind building
               this site!
-              <br><br>
-              <mark  style="font-size: 0.9rem;"> <i><u>Thank you Mrs. Fernandez for this amazing
-                    school year! </u></i></mark>
-              <br><br><br>
+            </p>
+            <br><br>
+            <mark style="font-size: 0.9rem;"> <i><u>Thank you Mrs. Fernandez for this amazing
+                  school year! </u></i></mark>
+            <br><br><br>
             </p>
           </div>
 
@@ -134,7 +150,8 @@
           <p>
             This site is hosted for free using Cloudflare Pages at <a href="https://martin37.my.to/"
               target="_blank">https://martin37.my.to/</a>. The domain and DNS service is from <a
-              href="https://freedns.afraid.org" target="_blank">Free DNS</a>
+              href="https://freedns.afraid.org" target="_blank">Free DNS</a><br><br>
+            Made with <i class="bi bi-bootstrap-fill"></i>ootstrap 5
           </p>
         </div>
         <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://github.com/marmart1987"
@@ -183,14 +200,14 @@
 
       </div>
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.12);">
-        <p>&copy; <span id = "year"></span>, Martin D. Thomas. No Rights Reserved </p>
+        <p>&copy; <span id="year"></span>, Martin D. Thomas. No Rights Reserved </p>
         <script>
           const d = new Date();
           let year = d.getFullYear();
           document.getElementById('year').innerHTML = year
         </script>
         <p xmlns:cc="http://creativecommons.org/ns#">This work by <span property="cc:attributionName">
-            Martin Thomas of 8-Corby</span> is marked with <a
+            Martin Thomas of 8-Corby</span> is marjed with <a
             href="https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1" target="_blank"
             rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0 Universal<img
               style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
