@@ -13,9 +13,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <style>
-    :root {
-      --color: rgba(0, 0, 0, 0.4);
-    }
 
     #header {
       height: 40vh;
@@ -24,7 +21,11 @@
       background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(252, 176, 69, 1) 100%);
       /*https://cssgradient.io/*/
     }
+    div a img, div a video {
+      border: 5px solid var(--color);
+    }
   </style>
+   <script defer src="strobe.js"></script>   
 
 </head>
 
@@ -118,9 +119,6 @@
         </a>
 
       </div>
-
-
-
 
       <div class="col-lg-4 mb-4 mb-lg-0">
         <a role="button"
