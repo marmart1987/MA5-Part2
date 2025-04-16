@@ -4,6 +4,7 @@ function updHeaderSize() {
 }
 updHeaderSize()
 window.onresize = updHeaderSize
+//To avoid having to set the offset manually 
 
 
 
@@ -30,7 +31,7 @@ function getCookie(cname) {
     return "";
 }
 //https://www.w3schools.com/js/js_cookies.asp
-// You can probably tell which code is mine or not by looking at the semicolons. I'm too lazy to write them.
+
 
 
 console.log("Theme:", getCookie("theme"))
