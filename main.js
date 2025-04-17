@@ -1,6 +1,7 @@
 function updHeaderSize() {
     console.log("Size of header:" + document.getElementById("nav").offsetHeight)
-    document.getElementById("content").style.marginTop = document.getElementById("nav").offsetHeight - 1 + "px";
+    document.getElementById("content").style.marginTop =
+     document.getElementById("nav").offsetHeight - 1 + "px";
 }
 updHeaderSize()
 window.onresize = updHeaderSize
@@ -31,9 +32,6 @@ function getCookie(cname) {
     return "";
 }
 //https://www.w3schools.com/js/js_cookies.asp
-
-
-
 console.log("Theme:", getCookie("theme"))
 if (getCookie("theme") === 'bg-dark') {
     document.documentElement.setAttribute('data-bs-theme', 'dark')
@@ -44,6 +42,7 @@ if (getCookie("theme") === 'bg-dark') {
     document.color = "bg-light"
 }
 updCollapsibleNav()
+
 let x = () => {
     console.log("Previous theme:", getCookie("theme"))
     if (getCookie("theme") == 'bg-dark') {
@@ -61,25 +60,3 @@ let x = () => {
     updCollapsibleNav()
 }
 document.getElementById('btnSwitch').addEventListener('click', x)
-
-//---------------------
-
-// document.addEventListener('scroll', scroll)
-
-// function scroll() {
-//     console.log("a")
-//     const el = document.getElementsByClassName("sI")
-//     console.log(el)
-//     for (let i = 0; i < el.length; i++) {
-//         const element = el[i]
-//         var rect = element.getBoundingClientRect();
-//         console.log((rect.bottom), window.innerHeight);
-//         if(rect.bottom < window.innerHeight){
-//             console.log('GJJJJJJJJJM')
-//             setInterval( () => {
-
-//             element.style.opacity--
-//             }, 100)
-//         }
-//     }
-// }
