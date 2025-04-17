@@ -12,7 +12,12 @@
   <script defer src="./main.js"></script>
   <script defer src="./strobe.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+  <style>
+    #grad {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(155, 0, 40, 0.7));
+      padding-bottom: 10vh;
+    }
+  </style>
 </head>
 
 <body>
@@ -54,8 +59,8 @@
       object-position: 100 0;" height="100%">
     <div class="mx-5">
       <h1 class="display-1">About Me</h1>
-      <div class="container-fluid" style="background-color: rgba(0, 58, 108, 0.4);  width:60vw">
-        <p style="width: 100%;font-size: 3vw;" class="typing text-center">Hi! I am Martin D. Thomas</p>
+      <div class="container-fluid" style="background-color: rgba(0, 58, 108, 0.4);  width:60vw; border:3px solid var(--color); border-radius: 5px ">
+        <p style="width: 100%;font-size: 3vw; ;" class="typing text-center">Hi! I am Martin D. Thomas</p>
       </div>
       <div class="container my-5">
         <small style="font-size: 2rem; color:gray; font-family: Verdana, Geneva, Tahoma, sans-serif;">Aside from that, I
@@ -66,31 +71,51 @@
           <li class="display-5 sI">...a Filipino</li>
         </ul>
         <div style="height:30vh">
-          <p><br><br>...</p>
+          <p><br><br></p>
         </div>
-        <p class="h2 " style="font-family: 'Courier New', Courier, monospace;">
-          However, you might know those already.
-        </p>
-        <hr>
-        <p style="text-align: right; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; padding-right: 5vw;"
-          class="h2">
-          Here are a few facts about me that <br>
-          <span class="mark">you likely don't.</span>
-        </p>
-        <div class="centered">
-          <i class="bi bi-arrow-down" style="font-size: 20vw; color: crimson; margin: 0; padding: 0;"></i>
+        <div style="border: 4px double var(--color); padding: 10px; border-radius: 15px; background-color: rgba(76, 76, 215, 0.5);">
+          <p class="display-3" style="font-family: 'Courier New', Courier, monospace;">
+            However, you probably know those already.
+          </p>
+          <hr>
+          <p style="text-align: right; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; padding-right: 15vw;"
+            class="display-4">
+            Here are a few facts about me<br>
+            <span style="font-weight: 900;">you likely don't.</span>
+          </p>
         </div>
-        <ul class="centered" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
-          <li class="h5 sI">I love ice cream</li>
-          <li class="h3 sI">...an Atenean</li>
-          <li class="h1 sI">...a Filipino</li>
-          <li class="display-5 sI">...an Atenean</li>
-          <li class="display-4 sI">...a Filipino</li>
-        </ul>
+
 
       </div>
 
+
     </div>
+    <div id="grad" style="margin-bottom: 0;">
+      <div class="centered">
+        <i class="bi bi-arrow-down" style="font-size: 20vw; color: crimson; margin: 0; padding: 0;"></i>
+      </div>
+      <ul class="centered" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+        <li class="h5 sI">I support privacy, encryption, freedom of speech, copyleft, and free software</li>
+        <li class="h3 sI">This page took a while (not exactly about me...)</li>
+        <li class="h2 sI">I love learning about electronics and programming</li>
+        <li class="h1 sI">I like trying new food</li>
+        <li class="display-5 sI">I love Computer, Math, and Science</li>
+      </ul>
+
+    <hr>
+    </div>
+    <div style="background-color: rgba(155,0,40,0.7);" class="container-fluid pb-5">
+
+      <p class="display-1"
+        style="display: inline; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Want to learn
+        more?</p>
+      <!-- <hr> -->
+      <p style="display: inline;">I hope so...</p>
+      <p class="display-4">Check out the pages under the "My Interests" tab! <br>
+      <p><a href="creating.html" class="btn btn-info" role="button">You may also view the first interest page by
+          clicking here</a>
+    </div>
+
     <footer class="text-center">
       <div class="container p-4">
         <div class="mb-4">
