@@ -1,7 +1,7 @@
 function updHeaderSize() {
     console.log("Size of header:" + document.getElementById("nav").offsetHeight)
     document.getElementById("content").style.marginTop =
-     document.getElementById("nav").offsetHeight - 1 + "px";
+        document.getElementById("nav").offsetHeight - 1 + "px";
 }
 updHeaderSize()
 window.onresize = updHeaderSize
