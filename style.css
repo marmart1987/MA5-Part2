@@ -109,3 +109,12 @@ nav{
 :root {
   --color: rgba(0, 0, 0, 0.4);
 }
+a{
+  transition: all 0.5s ease-in;
+}
+a:hover{
+  color:red !important;
+  font-weight: bolder;
+  background-color: rgba(66, 113, 113, 0.4);
+  
+}
